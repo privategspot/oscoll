@@ -8,25 +8,6 @@ from collect import SysInfo, AppCollector, get_mac
 from options import UNNECESSARY_APPS, APPS_TO_REPLACE, CSV_HEADERS
 
 
-# def in_args(args, *keys) -> bool:
-#     for key in keys:
-#         if key in args:
-#             return True
-#     return False
-
-# def parse_console() -> Dict:
-#     if in_args(args, "-u", "--unit"):
-#         pass
-#     elif in_args(args, "-c", "--cabinet"):
-#         pass
-#     elif in_args(args, "-d", "--department"):
-#         pass
-#     elif in_args(args, "-i", "--inventory_num"):
-#         pass
-#     elif in_args(args, "-a", "--arm_type"):
-#         pass
-
-
 def create_default_parser():
     parser = argparse.ArgumentParser(
         description="Собирает информацию о системе и записывает её в csv файл",
